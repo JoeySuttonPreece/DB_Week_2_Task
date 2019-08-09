@@ -48,3 +48,33 @@ CREATE TABLE PlayerRegistration (
 ,   FOREIGN KEY     (ClubName, SeasonYear, SeasonName, AgeGroup, TeamNumber) REFERENCES TeamEntry
 );
 
+INSERT INTO Club (ClubName, ContactName) VALUES
+('Mt Martha Basketball Club', 'Bob Jane'),
+('Club For Cool Kids', 'Jane Bob'),
+('Very Lame Club For Losers', 'Anon'),
+('Scream Time AAAAAAAAAA', 'Brent ''aaaaaaaaaaaaaaaaaaa'' Anderson');
+
+INSERT INTO Season (SeasonYear, SeasonName) VALUES
+(2018, 'Winter'),
+(2018, 'Summer'),
+(2019, 'Winter'),
+(2019, 'Summer');
+
+INSERT INTO TeamEntry (ClubName, SeasonYear, SeasonName, AgeGroup, TeamNumber) VALUES
+('Mt Martha Basketball Club', 2018, 'Summer', 'U14', 1),
+('Mt Martha Basketball Club', 2018, 'Summer', 'U14', 2),
+('Club For Cool Kids', 2019, 'Winter', 'O18', 1),
+('Scream Time AAAAAAAAAA', 2019, 'Winter', 'U14', 1);
+
+INSERT INTO Player (Fname, Lname, Phone) VALUES
+('John', 'Howard', '5552345'),
+('Julia', 'Gillard', '5553456'),
+('Frank', 'Sonnatii', '0000142'),
+('Little', 'Mac', '342444');
+
+INSERT INTO PlayerRegistration (PlayerId, ClubName, SeasonYear, SeasonName, AgeGroup, TeamNumber, DateRegistered) VALUES
+(1003, 'Mt Martha Basketball Club', 2018, 'Summer', 'U14', 2, '2019-1-1'),
+(1000, 'Club For Cool Kids', 2019, 'Winter', 'O18', 1, '2019-5-5'),
+(1001, 'Club For Cool Kids', 2019, 'Winter', 'O18', 1, '2019-2-2'),
+(1002, 'Club For Cool Kids', 2019, 'Winter', 'O18', 1, '2019-3-3'),
+(1003, 'Club For Cool Kids', 2019, 'Winter', 'O18', 1, '2019-4-4');
