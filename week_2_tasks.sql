@@ -78,3 +78,17 @@ INSERT INTO PlayerRegistration (PlayerId, ClubName, SeasonYear, SeasonName, AgeG
 (1001, 'Club For Cool Kids', 2019, 'Winter', 'O18', 1, '2019-2-2'),
 (1002, 'Club For Cool Kids', 2019, 'Winter', 'O18', 1, '2019-3-3'),
 (1003, 'Club For Cool Kids', 2019, 'Winter', 'O18', 1, '2019-4-4');
+
+SELECT
+    PlayerID,
+    Fname,
+    Lname,
+    Phone,
+    ClubName,
+    ContactName,
+    SeasonYear,
+    SeasonName,
+    AgeGroup,
+    TeamNumber
+FROM PlayerRegistration
+INNER JOIN
